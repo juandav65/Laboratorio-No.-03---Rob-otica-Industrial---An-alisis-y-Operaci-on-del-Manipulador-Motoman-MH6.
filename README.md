@@ -36,8 +36,43 @@ El manipulador cuenta con dos posiciones de Home.
 ## Acerca de las velocidades en los movimientos manuales
 El Manipulador tiene 3 botones para el control de la velocidad en el teach pendant, los cuales son "High Speed", "Fast" y "Slow" ademas de esto dentro de las configuraciones se pueden selecionar  cuatro modos, "inching", "Low speed", "Medium speed" y "High speed".
 
+## RoboDK - Comunicación y principales aplicaciones
+1. Principales aplicaciones
+   - Simulación de trayectorias robóticas
+      - Para validar procesos sin riesgos durante una ejecución real
+   - Integración CAD-CAM
+      - Se pueden importar modelos desde Inventor u otras aplicaciones de modelado para generar trayectorias.
+   - Control externo en tiempo real
+      - RoboDK puede controlar el robot en línea mediante conexión directa, usando protocolos específicos (como Ethernet/IP, TCP/IP o drivers personalizados).
+      - Esto permite aplicaciones como control desde Python, visión artificial o gemelos digitales.
+   - Interfaz con sensores y sistemas externos
+2. Comunicación de RoboDK con el manipulador
+   - Programación Offline
+      - RoboDK genera el código específico del robot
+      - Luego, este código se transfiere al controlador del robot
+         - USB
+         - FTP
+         - Red local
+      - El robot ejecuta el programa sin que RoboDK esté conectado.
+   - Control en Tiempo Real
+      - RoboDK puede controlar el robot directamente desde el PC.
+      - Usa un driver de comunicación específico del fabricante.
 
-7) Se Realizo una Trayectoria Polar, en la que se describe una espiral  enmarcada por un circulo, el codigo de esta se encuentra en, ScriptPY_Uzumaki asi como videos de la simulacion y de la trayectoria fisica en los videos Uzumaki.mp4 y ...... respectivamente.
+## ¿RoboDK o RobotStudio?
+En cuanto a la experiencia obtenida en el uso de los dos aplicativos, se encontraron las siguientes diferencias
+1. Compatibilidad: RoboDK es multimarca mientras que robotStudio es exclusivo para robots ABB.
+2. Lenguaje de programación: RoboDK genera código para múltiples lenguajes mientras que robotStudio usa RAPID, el cual es exclusivo de ABB.
+3. Interfaz: Se percibió mas amigable la interfaz de RoboDK por ser mas intuitiva.
+4. Costo: Para RoboDK se encuentra una licencia más asequible y con versiones académicas y para RobotStudio un entorno gratuito para simulación, pero limitado sin hardware.
+
+En conclusión RoboDK es mas flexible y compatible con múltiples marcas, lo que lo hace muy completo, pero RobotStudio al ser un entorno propio y exclusivo de ABB, nos da mayor garantía de un correcto funcionamiento para los robots de la marca.
+
+## Simulación y ejecuciones
+Se Realizo una Trayectoria Polar, en la que se describe una espiral  enmarcada por un circulo, el codigo de esta se encuentra en, ScriptPY_Uzumaki asi como video de la simulacion Uzumaki.mp4
+
+[![Watch the video](https://img.youtube.com/vi/BOKPdeE4bVg/maxresdefault.jpg)](https://youtu.be/BOKPdeE4bVg)
+
+### [Ejecución de trayectoria UZM](https://youtu.be/BOKPdeE4bVg)
 
 
 [![Watch the video](https://img.youtube.com/vi/Urdk39AMFZ4/maxresdefault.jpg)](https://youtu.be/Urdk39AMFZ4)
