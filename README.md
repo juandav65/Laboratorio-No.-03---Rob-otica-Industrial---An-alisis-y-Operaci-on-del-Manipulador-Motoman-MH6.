@@ -12,4 +12,5 @@ Home 2 hace referencia a los servomotores en 0, y este se utiliza pra tener el r
 
 4) El Manipulador tiene 3 botones para el control de la velocidad en el teach pendant, los cuales son "High Speed", "Fast" y "Slow" ademas de esto dentro de las configuraciones se pueden selecionar  cuatro modos, "inching", "Low speed", "Medium speed" y "High speed".
 
+
 7) Se Realizo una Trayectoria Polar, en la que se describe una espiral  enmarcada por un circulo, el codigo de esta se encuentra en, ScriptPY_Uzumaki asi como videos de la simulacion y de la trayectoria fisica en los videos Uzumaki.mp4 y ...... respectivamente.
